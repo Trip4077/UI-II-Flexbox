@@ -98,11 +98,9 @@ h3 {
 	display: flex;
 	width: 60%;
 	justify-content: space-between;
-
 }
 
 .nav-bar a {
-
 	text-decoration: none;
 	color:  white;
 }
@@ -281,12 +279,79 @@ footer address p {
 	width: 85%;
 	line-height: 25px;
 }
-
+s
 .facts ul {
-	list-style-type: square;
+
 	margin: 2em 0 0 1em;
 }
 
 .facts ul li {
+	list-style-type: square;
 	padding: 10px 0;
+}
+
+/*mobile styles*/
+@media only screen and (max-width:700px){
+	/*navigation mobile*/
+	.nav-bar {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+
+	.nav-bar img {
+		width: 70%;
+		height: auto;
+	}
+
+	.nav-bar a {
+		font-size: 12px;
+		text-decoration: none;
+		color:  white;
+	}
+
+	/*services mobile*/
+	.services-head {
+		width: 60%;
+	}
+
+	.services-head h1, .services-head p {
+		padding-left: 25px;
+	}
+
+	.services-head p {
+		width: 75%;
+	}
+
+	.services-content {
+		flex-wrap: wrap;
+		flex-direction: column;
+		padding-left: 25px;
+	}
+
+	.footer-container {
+		width: 75%;
+		flex-direction: column;
+	}
+
+	.facts {
+		padding-left: 25px;
+	}
+
+	.services-info-img {
+		width: 650px;
+		padding-left: 15px;
+	}
+
+	.copyright {
+		padding: 20px;
+		margin: 0;
+		margin-bottom: 3em;
+		text-align: left;
+	}
 }
