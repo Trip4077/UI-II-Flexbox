@@ -301,6 +301,10 @@ Services Page
 Products Page
 
 */
+hr {
+	margin: 2em 0;
+}
+
 .products-banner {
 	width: 100%;
 }
@@ -315,7 +319,7 @@ Products Page
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	margin-left: 7em;
+	margin-bottom: 2em;
 }
 
 .stores-flex {
@@ -323,17 +327,17 @@ Products Page
 	flex-wrap: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 45%;
-	margin-top: 4em;
-}
-
-.stores-flex img {
-	margin-left: 2em;
+	align-items: center;
+	width: 35%;
+	margin-top: 1.5em;
+	margin-right: 2em;
+	border: 1px solid black;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .stores-flex h2 {
-	margin-left: 1.5em;
 	font-size: 32px;
+	padding-top: 1em;
 }
 
 .stores-flex p {
@@ -342,9 +346,74 @@ Products Page
 	line-height: 22px;
 }
 
+.stores-flex a {
+	border: 1px solid black;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+	padding: 5px 20px;
+}
+
+.stores-flex a:hover {
+	color: white;
+	border: 1.5px solid white;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.shop-link-p {
+	margin: 2em 0;
+	margin-left: 8em;
+}
+
 .support {
 	width: 100%;
+	height: 55%;
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5em 0;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.support h2 {
+		font-size: 32px;
+}
+
+.support h3 {
+	font-size: 28px;
+}
+
+.email {
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	margin-left: 25px;
+}
+
+.email-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.email-form input {
+	margin: 10px 0;
+}
+
+.summary {
+	padding: 0 2em;
+	line-height: 35px;
+}
+
+.support-flex h3 {
+	padding: 0.5em 0;
+}
+
+.support-flex address p {
+	padding: 5px;
+}
+
+.support-flex img {
+	margin-right: 25px;
 }
 /*
 
