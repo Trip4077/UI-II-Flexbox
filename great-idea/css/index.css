@@ -208,7 +208,11 @@ footer address p {
 
 }
 
-/*Services*/
+/*
+
+Services Page
+
+*/
 .services-head{
 	display: flex;
 	flex-wrap: wrap;
@@ -292,7 +296,61 @@ footer address p {
 	padding: 10px 0;
 }
 
-/*mobile styles*/
+/*
+
+Products Page
+
+*/
+.products-banner {
+	width: 100%;
+}
+.products-header {
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+.stores {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-left: 7em;
+}
+
+.stores-flex {
+	display: flex;
+	flex-wrap: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 45%;
+	margin-top: 4em;
+}
+
+.stores-flex img {
+	margin-left: 2em;
+}
+
+.stores-flex h2 {
+	margin-left: 1.5em;
+	font-size: 32px;
+}
+
+.stores-flex p {
+	width: 65%;
+	text-align: justify;
+	line-height: 22px;
+}
+
+.support {
+	width: 100%;
+	display: flex;
+}
+/*
+
+mobile styles
+
+*/
 @media only screen and (max-width:700px){
 	/*navigation mobile*/
 	.nav-bar {
