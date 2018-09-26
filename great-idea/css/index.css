@@ -135,6 +135,7 @@ h3 {
 header.home, img.home {
 	margin: 6em;
 	margin-left: 13em;
+	position: relative;
 	display: flex;
 }
 
@@ -151,8 +152,8 @@ header img.home {
 
 header a {
 	position: absolute;
-	left: 25em;
-	top: 28em;
+	left: 1.5em;
+	top: 22em;
 	border: 1px solid black;
 	padding: 7px 45px;
 	letter-spacing: 2px;
@@ -183,12 +184,12 @@ header a:hover {
 
 .middle-img {
 	align-self: center;
-		margin: 0 auto;
+	margin: 0 auto;
 }
 
 .lower-content {
  width: 30%;
- 	margin: 0 auto;
+ margin: 0 auto;
 }
 
 footer {
@@ -341,10 +342,15 @@ s
 
 	.facts {
 		padding-left: 25px;
+		width: 75%;
+	}
+
+	.facts ul {
+		margin-left: 1.25em;
 	}
 
 	.services-info-img {
-		width: 650px;
+		width: 600px;
 		padding-left: 15px;
 	}
 
@@ -353,5 +359,56 @@ s
 		margin: 0;
 		margin-bottom: 3em;
 		text-align: left;
+	}
+	/*index mobile*/
+	header.home {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		margin-left: 7em;
+	}
+
+	.home img {
+		height: 300px;
+		width: 300px;
+		margin: 0 0;
+	}
+
+	.home h1 {
+		padding-top: 35px;
+	}
+
+	.home a {
+		top: 29em;
+		left: 12em;
+	}
+
+	.container {
+		height: 150%;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: flex-start;
+	}
+
+	.main-content {
+		flex-direction: column;
+		margin: 0 2em;
+	}
+
+	.middle-img {
+		width: 500px;
+		height: 125px;
+		margin: 0 2em;
+		align-self: flex-start;
+	}
+	.lower-content {
+		margin: 0 2em;
+	}
+
+	.home-footer {
+		margin-left: 2em;
+	}
+	.copyright {
+		margin: 2em 0 2em 8em;
 	}
 }
