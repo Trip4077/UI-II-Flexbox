@@ -301,6 +301,7 @@ Services Page
 Products Page
 
 */
+
 hr {
 	margin: 2em 0;
 }
@@ -444,7 +445,11 @@ mobile styles
 		color:  white;
 	}
 
-	/*services mobile*/
+	/*
+
+	services mobile
+
+	*/
 	.services-head {
 		width: 60%;
 	}
@@ -488,7 +493,11 @@ mobile styles
 		margin-bottom: 3em;
 		text-align: left;
 	}
-	/*index mobile*/
+	/*
+
+	index mobile
+
+	*/
 	header.home {
 		flex-direction: column-reverse;
 		align-items: flex-start;
@@ -538,5 +547,39 @@ mobile styles
 	}
 	.copyright {
 		margin: 2em 0 2em 8em;
+	}
+
+	/*
+
+	Products mobile
+
+	*/
+	.products-banner {
+		width: 55%;
+	}
+
+	.products-header {
+		margin: 1em 1em;
+		text-align: left;
+		font-size: 70px;
+	}
+
+	.stores {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left: 8em;
+	}
+
+	.support {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: flex-start;
+		height: auto;
+		width: 40%;
+		margin-left: 6em;
+	}
+
+	.support-img {
+		margin-left: 2em;
 	}
 }
