@@ -1,0 +1,292 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+		width: 1250px;
+		margin: 0 auto;
+    font-family: 'Roboto Mono', monospace, 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.nav-bar {
+	background-color: #AAAAAA;
+	position: fixed;
+	top: 0;
+	width: 78.2em;
+	height: 4em;
+	z-index: 2;
+	border: 5px ridge lightgrey;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav-bar nav {
+	width: 75%;
+	height: 3em;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.nav-bar a {
+	width: auto;
+	padding: .25em;
+	text-decoration: none;
+	color:  white;
+	position: relative;
+}
+
+/*navbar animation*/
+.nav-bar a::before {
+	content: '';
+	display: block;
+	height: 2px;
+	width: 0%;
+	background-color: black;
+
+
+	position: absolute;
+	top: 0;
+
+	transition: all ease-in-out 250ms;
+}
+
+.nav-bar a:hover::before {
+	width: 90%;
+}
+
+.nav-bar a:hover {
+	color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 75px;
+  border-bottom: 3px solid black;
+  margin: 0 auto;
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+#logo:hover::before {
+	width: 0%;
+}
+
+.vision-text {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 3px solid black;
+  margin-bottom: 2em;
+}
+
+.vision-text p {
+  letter-spacing: .75px;
+  line-height: 25px;
+  width: 700px;
+  margin: 1em auto;
+  margin-top: 4em;
+}
+
+.vision-text span {
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Free images from pexels.com*/
+.member-container {
+  width: 40%;
+  display: flex;
+	flex-wrap: wrap;
+  margin-left: 4em;
+}
+
+.team {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+  padding-bottom: 2em;
+	margin-left: 5em;
+}
+.team h2 {
+	align-self: center;
+}
+
+.team img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+
+.team p {
+  width: 300px;
+}
+
+.banner {
+	display: block;
+	height: 200px;
+  width: 75%;
+  margin: 4em auto;
+  padding: 5px;
+  background-color: silver;
+  box-shadow: 0px 0px 10px 2px black;
+
+}
+
+footer p {
+  padding: 7px;
+}
+
+.copyright
+ {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+/*mobile styles*/
+@media only screen and (max-width:700px){
+	/*navigation mobile*/
+	.nav-bar {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+
+	.nav-bar img {
+		width: 30%;
+		height: auto;
+	}
+
+	.nav-bar a {
+		font-size: 12px;
+		text-decoration: none;
+		color:  white;
+	}
+
+	h1 {
+		text-align: left;
+		margin-left: 2.5em;
+		border-bottom: none;
+	}
+
+	.vision-text {
+		margin: 0 0;
+		width: 75%;
+		flex-direction: column;
+		justify-content: 	space-around;
+	}
+
+	.vision-text h2 {
+		width: 66%;
+	}
+
+	.vision-text p {
+		margin: 2em 7em;
+		width: 50%;
+	}
+
+	.team {
+		flex-direction: column;
+		margin-left: 6em;
+	}
+
+	.member-container p {
+		padding: 2em 0;
+	}
+
+	#our-team {
+		text-align: left;
+		margin: 1em 6em;
+	}
+
+	.banner {
+		width: 40%;
+		margin: 2em 5em;
+	}
+
+	footer h3 {
+		margin-left: 8.75em;
+	}
+
+  address {
+		margin-left: 14em;
+	}
+
+	.copyright {
+			margin: 2em 11em;
+			text-align: left;
+	}
+}

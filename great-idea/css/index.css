@@ -245,6 +245,7 @@ footer address p {
 	border: 1px solid black;
 	margin-bottom: 2em;
 	width: 40%;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .service-box h2 {
@@ -264,13 +265,14 @@ footer address p {
 	width: 25%;
 	padding: 0.5em 0;
 	color: black;
+	background-color: white;
 	font-size: 14px;
 	margin: 20px 0 20px 20px;
 }
 
 .service-box a:hover {
-	background-color: rgba(0,0,0, 0.1);
-	font-weight: bold;
+	background-color: rgba(0,0,0, 0.6);
+	color: ghostwhite;
 }
 .footer-container {
 	display: flex;
@@ -280,10 +282,9 @@ footer address p {
 	width: 85%;
 	line-height: 25px;
 }
-s
-.facts ul {
 
-	margin: 2em 0 0 1em;
+.facts ul {
+	margin: 1em 1em;
 }
 
 .facts ul li {
